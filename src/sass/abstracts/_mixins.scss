@@ -11,26 +11,25 @@
 }
 
 // 1em= 16px
-// breakpoint arguments: phone, tablet-p, tablet-l, desktop
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 30em) {
       @content;
-    } //600px % 16px = 37.5
+    } //480px % 16px = 30
   }
   @if $breakpoint == tablet-p {
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 48em) {
       @content;
-    } //900px % 16px = 56.25
+    } //768px % 16px = 48
   }
   @if $breakpoint == tablet-l {
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 64em) {
       @content;
-    } //1200px % 16px = 75
+    } //1024px % 16px = 64
   }
   @if $breakpoint == desktop {
-    @media only screen and (min-width: 112.5em) {
+    @media only screen and (max-width: 80em) {
       @content;
-    } //1800px % 16px = 112.5
+    } //1280px % 16px = 80
   }
 }

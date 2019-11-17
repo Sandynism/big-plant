@@ -1,32 +1,27 @@
 import React from 'react';
-import data from '../data/data.json';
 
-const Card = props => {
-  const images = data.map(image => {
+const Card = ({ index, flowerInfo: { id, url, flowerName, person, description, content, comments }} )=> {
     return (
-      <div className="card">
-        <div className="flip-card" key={image.id}>
-          <div className="flip-card--inner">
-            <div className="flip-card--front">
-              <img src={image.url} alt={image.flowerName} />
+      <div className={`card grid--${index}`}>
+        <div className="card__image" key={id}>
+          <div className="card__image--inner">
+            <div className="card__image--front">
+              <img src={url} alt={flowerName} />
             </div>
-            <div className="flip-card--back">
-              <p>{image.person}'s Favorite</p>
+            <div className="card__image--back">
+              <p>{person}'s Favorite</p>
             </div>
           </div>
 
           <hr className="hr-line" />
           <div className="card__name">
-            {/* link to flower page */}
-            <a href="/">{image.flowerName}</a>
+            {/* router link to flower page */}
+            <a href="/">{flowerName}</a>
           </div>
-          <div className="card__description">{image.description}</div>
+          <div className="card__description">{description}</div>
         </div>
       </div>
     );
-  });
-
-  return <div className="imageContainer">{images}</div>;
 };
 
 export default Card;

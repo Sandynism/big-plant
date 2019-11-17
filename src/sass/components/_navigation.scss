@@ -1,6 +1,48 @@
 .navigation {
   @include nav-font;
 
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    align-self: flex-start;
+
+    @include respond(phone) {
+      height: 75px;
+      width: 80px;
+    }
+  }
+
+  &__name {
+    font-family: $font-primary;
+    font-size: $font-size-big;
+    font-weight: bold;
+    color: $color-black;
+    margin-top: 2rem;
+
+    @include respond(phone) {
+      font-size: $font-size-med;
+    }
+
+    &--desktop {
+      @include respond(tablet-p) {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      text-align: center;
+      display: none;
+
+      @include respond(tablet-p) {
+        display: block;
+      }
+    }
+  }
+
   &__dropbtn {
     @include nav-font;
     @include nav-color;
@@ -13,6 +55,10 @@
     position: relative;
     display: inline-block;
     margin-top: 2.5rem;
+
+    @include respond(tablet-p) {
+      display: none;
+    }
   }
 
   &__dropdown--left {
@@ -40,20 +86,43 @@
       }
     }
   }
-}
 
-.navigation__dropdown--left:hover .navigation__dropdown-content {
-  display: block;
-}
+  &__dropdown--left:hover &__dropdown-content {
+    display: block;
+  }
 
-.navigation__dropdown--left:hover .navigation__dropbtn {
-  background-color: $color-white;
-}
+  &__dropdown--left:hover &__dropbtn {
+    background-color: $color-white;
+  }
 
-.navigation__dropdown--right:hover .navigation__dropdown-content {
-  display: block;
-}
+  &__dropdown--right:hover &__dropdown-content {
+    display: block;
+  }
 
-.navigation__dropdown--right:hover .navigation__dropbtn {
-  background-color: $color-white;
+  &__dropdown--right:hover &__dropbtn {
+    background-color: $color-white;
+  }
+
+  &__dropdown--mobile,
+  &__dropbtn-mobile,
+  &__dropdown-content-mobile {
+    display: none;
+  }
+
+  &__dropdown--mobile:hover &__dropdown-content-mobile {
+    @include respond(tablet-p) {
+      display: block;
+    }
+  }
+
+  &__dropdown--mobile {
+    @include respond(tablet-p) {
+      position: relative;
+      display: block;
+    }
+  }
+
+  &__mobilebtn {
+    font-size: 2.5rem;
+  }
 }
