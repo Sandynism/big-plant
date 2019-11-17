@@ -1,0 +1,36 @@
+@mixin nav-font {
+  font-family: $font-primary;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+@mixin nav-color {
+  background-color: $color-white;
+  color: $color-black;
+  border: 1px solid $color-black;
+}
+
+// 1em= 16px
+// breakpoint arguments: phone, tablet-p, tablet-l, desktop
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px % 16px = 37.5
+  }
+  @if $breakpoint == tablet-p {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px % 16px = 56.25
+  }
+  @if $breakpoint == tablet-l {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px % 16px = 75
+  }
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800px % 16px = 112.5
+  }
+}

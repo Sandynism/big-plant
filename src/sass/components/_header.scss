@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-evenly;
+
+
+  &__logo {
+    align-self: flex-start;
+  }
+
+  &__name {
+    font-family: $font-primary;
+    font-size: $font-size-big;
+    font-weight: bold;
+    color: $color-black;
+    margin-top: 2rem;
+
+    @include respond(phone) {
+      font-size: $font-size-med;
+    }
+  }
+}
+
