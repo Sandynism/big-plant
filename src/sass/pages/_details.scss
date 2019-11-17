@@ -1,0 +1,121 @@
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8rem;
+  position: relative;
+
+  @include respond(tablet-l) {
+    flex-direction: column;
+    margin: 1rem auto;
+    // align-items: center;
+    // justify-content: center;
+    // text-align: center;
+  }
+
+  &__col-1 {
+    width: 60%;
+    position: relative;
+
+    @include respond(tablet-l) {
+      width: 100%
+    }
+  }
+
+  &__col-2 {
+    width: 35%;
+    position: relative;
+
+    @include respond(tablet-l) {
+      width: 100%
+    }
+  }
+
+  &__back {
+    font-size: 3rem;
+    position: absolute;
+    top: -70px;
+    left: 0;
+
+    & a {
+      color: $color-black;
+      transition: all 0.2s;
+
+      &:hover {
+        color: $color-primary-dark;
+      }
+    }
+  }
+
+  &__image-container {
+    height: 550px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+
+    @include respond(tablet-l) {
+      height: auto;
+      max-height: 400px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__image-name,
+  &__person-name {
+    font-family: $font-primary;
+    font-weight: 600;
+    font-size: $font-size-med;
+  }
+
+  &__content {
+    font-size: $font-size-small;
+    font-family: $font-primary;
+    letter-spacing: 2px;
+    max-width: 100%;
+    color: rgba($color-black, 0.75);
+    margin-top: 1rem;
+  }
+
+  &__form {
+    margin: 3rem 0;
+  }
+
+  &__form-label,
+  &__comments-label {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: $font-primary;
+  }
+
+  &__form-btn-wrapper {
+    text-align: right;
+    width: 100%;
+  }
+
+  &__form-text {
+    font-size: $default-font-size;
+    font-family: $font-primary;
+    border: 1px solid $color-black;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  &__form-btn {
+    border: 1px solid $color-black;
+    background-color: $color-white;
+    font-size: $font-size-small;
+    font-weight: bold;
+    padding:  0.5rem 1.5rem 0.5rem 1.5rem;
+  }
+
+  &__comments-item {
+    background-color: $color-primary-light;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    letter-spacing: 2px;
+
+  }
+}

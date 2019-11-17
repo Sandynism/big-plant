@@ -1,12 +1,12 @@
 .card {
   width: 100%;
   align-content: center;
+  border-bottom: 4px solid black;
 
   &__image {
     background-color: transparent;
     height: 300px;
     perspective: 1000px;
-    padding: 5px;
     object-fit: cover;
 
     &:hover .card__image--inner {
@@ -26,9 +26,6 @@
       & img {
         width: 100%;
         height: 100%;
-        border-left: 8px solid $color-primary;
-        // border: 2px solid #ddd;
-        // padding: 5px 5px 5px 5px;
       }
     }
 
@@ -37,7 +34,7 @@
       color: $color-black;
       flex-wrap: wrap;
       transform: rotateY(180deg);
-      border: 2px solid $color-primary;
+      // border: 2px solid $color-primary;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -69,8 +66,7 @@
     max-width: 100%;
     padding-top: 2rem;
 
-    & a {
-      text-decoration: none;
+    &--title {
       color: $color-black;
       // background-color: $color-white;
       // border: 1px solid $color-black;
@@ -93,14 +89,14 @@
   }
 }
 
-.hr-line {
-  border-bottom: 3px solid $color-black;
-  margin: 0;
-  width: 450px;
-  position: absolute;
-  left: -46px;
+// .hr-line {
+//   border-bottom: 3px solid $color-black;
+//   margin: 0;
+//   width: 450px;
+//   position: absolute;
+//   left: -46px;
 
-  @include respond(phone) {
-    display: none;
-  }
-}
+//   @include respond(phone) {
+//     display: none;
+//   }
+// }
