@@ -1,8 +1,7 @@
 import React from 'react';
-import Description from './Description';
 import data from '../data/data.json';
 
-const ImageCard = props => {
+const Card = props => {
   const images = data.map(image => {
     return (
       <div className="card">
@@ -12,11 +11,16 @@ const ImageCard = props => {
               <img src={image.url} alt={image.flowerName} />
             </div>
             <div className="flip-card--back">
-              <p>{image.person}'s Favorite Flower</p>
+              <p>{image.person}'s Favorite</p>
             </div>
           </div>
 
-          <Description name={image.flowerName} description={image.description} />
+          <hr className="hr-line" />
+          <div className="card__name">
+            {/* link to flower page */}
+            <a href="/">{image.flowerName}</a>
+          </div>
+          <div className="card__description">{image.description}</div>
         </div>
       </div>
     );
@@ -25,4 +29,4 @@ const ImageCard = props => {
   return <div className="imageContainer">{images}</div>;
 };
 
-export default ImageCard;
+export default Card;

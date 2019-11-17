@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../images/logo.png';
 import Navigation from '../components/Navigation';
-import ImageCard from '../components/ImageCard';
+import Card from '../components/Card';
 
 class Home extends React.Component {
   render() {
@@ -13,8 +13,7 @@ class Home extends React.Component {
           <Navigation />
         </div>
         <div className="grid">
-          <ImageCard />
-          
+          <Card />
         </div>
       </div>
     )

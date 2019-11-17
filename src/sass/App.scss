@@ -1,12 +1,11 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
+@import "components/card";
 @import "components/comments";
 @import "components/content";
-@import "components/description";
 @import "components/header";
 @import "components/navigation";
-@import "components/imageCard";
 @import "components/inputBox";
 
 @import "layout/grid";
