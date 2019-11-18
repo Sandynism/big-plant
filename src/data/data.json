@@ -2,17 +2,17 @@
 	"id": 1,
 	"flowerName": "Daisy",
 	"url": "https://images.pexels.com/photos/67857/daisy-flower-spring-marguerite-67857.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-	"description": "The oxeye daisy is native to Europe and Asia but has become a common wild plant in the United States.",
-	"content": "",
+	"funFact": "A daisy is actually two flowers in one.",
+	"content": "Use organically rich, well-drained soil and mix in about 4 inches of compost. Plant transplants or sow the daisy seeds yourself. Space them 9 to 12 inches apart and lightly pack more soil over them. Add about an inch of mulch to retain moisture and to prevent weeds. Water thoroughly.",
 	"person": "Ju",
 	"comments": []
 },
 {
 	"id": 2,
 	"flowerName": "Orchid",
-	"url": "https://images.pexels.com/photos/132472/pexels-photo-132472.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-	"description": "Orchidaceae is a member of Asparagales, an order of monocotyledonous flowering plants that also includes the asparagus and iris families.",
-	"content": "",
+	"url": "https://images.pexels.com/photos/459150/pexels-photo-459150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+	"funFact": "An orchid has bilateral symmetry — like a human face — so if a line is drawn vertically down the middle of the flower, the two halves are mirror images of each other.",
+	"content": "Most orchids require water once a week. Avoid over watering as this can lead to root rot. Position your orchid in a bright windowsill facing east or west. Weekly feeding with a fertilizer designed for orchids. Repotting in fresh orchid mix when your orchid stops blooming.",
 	"person": "Kevin",
 	"comments": []
 },
@@ -20,8 +20,8 @@
 	"id": 3,
 	"flowerName": "Sunflower",
 	"url": "https://images.pexels.com/photos/1454288/pexels-photo-1454288.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-	"description": "Sunflowers are native primarily to North and South America, and some species are cultivated as ornamentals for their spectacular size and flower heads and for their edible seeds.",
-	"content": "",
+	"funFact": "They were cultivated in North America as far back as 3000 BCE, when they were developed for food, medicine, dye, and oil. ",
+	"content": "Sunflowers grow best in locations with direct sunlight (6 to 8 hours per day); they require long, hot summers to flower well. Find a well-drained location, and prepare your soil by digging an area of about 2-3 feet in circumference to a depth of about 2 feet.",
 	"person": "Kenny",
 	"comments": []
 },
@@ -29,17 +29,17 @@
 	"id": 4,
 	"flowerName": "Tulip",
 	"url": "https://images.pexels.com/photos/69776/tulips-bed-colorful-color-69776.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-	"description": "The genus Tulipa consists of about 100 species that are native to Eurasia from Austria and Italy eastward to Japan, with two-thirds of them native to the eastern Mediterranean and the southeastern parts of the Soviet Union.",
-	"content": "",
+	"funFact": "Tulips only bloom for 3-7 days in the spring. You can find tulips in almost any color.",
+	"content": "Plant tulip bulbs in the fall, 6 to 8 weeks before a hard frost is expected and when soils are below 60°F (15.5°C). Plant bulbs deep—at least 8 inches, measuring from the base of the bulb.",
 	"person": "Mirza",
 	"comments": []
 },
 {
 	"id": 5,
 	"flowerName": "Peony",
-	"url": "https://images.pexels.com/photos/1083822/pexels-photo-1083822.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-	"description": "The herbaceous peonies are perennials that grow to a height of almost 1 metre (about 3 feet).",
-	"content": "",
+	"url": "https://images.pexels.com/photos/552134/pexels-photo-552134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+	"funFact": "Peonies are the floral symbol of China, the state flower of Indiana and the 12th wedding anniversary flower.",
+	"content": "The herbaceous peonies are perennials that grow to a height of almost 1 metre (about 3 feet). Space peonies 3 to 4 feet apart for good air circulation. Potassium is essential for stem strength and to resist disease.",
 	"person": "Gainor",
 	"comments": []
 },
@@ -47,8 +47,8 @@
 	"id": 6,
 	"flowerName": "Rose",
 	"url": "https://images.pexels.com/photos/697259/pexels-photo-697259.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-	"description": "A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae.",
-	"content": "",
+	"funFact": "The buds of the tiniest roses are the size of a grain of rice.",
+	"content": "To produce an impressive show of flowers, a rose bush needs to be fertilized regularly. Organic methods provide a slow, steady supply of nutrients. To ensure a healthy rose bush, give it the equivalent of 1 inch of rainfall per week during the growing season.",
 	"person": "Ryan",
 	"comments": []
 },
@@ -56,8 +56,8 @@
 	"id": 7,
 	"flowerName": "Lavender",
 	"url": "https://images.pexels.com/photos/207518/pexels-photo-207518.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-	"description": "Lavender species are common in herb gardens for their fragrant leaves and attractive flowers.",
-	"content": "",
+	"funFact": "Lavender species are common in herb gardens for their fragrant leaves and attractive flowers.",
+	"content": "Lavender plants require little or no fertilizer. Lavender needs full sun and well-drained soil. Where soil drains poorly, grow lavender in raised beds.",
 	"person": "Dania",
 	"comments": []
 }

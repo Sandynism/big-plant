@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Comments from '../components/Comments';
 
 class Details extends React.Component {
   state = {
@@ -35,7 +36,7 @@ class Details extends React.Component {
   };
 
   render() {
-    const { id, url, flowerName, person, description, comments } = this.state.flowerData;
+    const { id, url, flowerName, person, content } = this.state.flowerData;
 
     return (
       <div className="details">
@@ -53,32 +54,15 @@ class Details extends React.Component {
 
         <div className="details__col-2">
           <div className="details__person-name">{person}'s Favorite Flower</div>
-          <div className="details__content">{description}</div>
-          {/* <Comments /> */}
+          <div className="details__content">{content}</div>
 
-          <div className="details__form">
-            <div className="details__form-label">Leave a comment:</div>
-            <form onSubmit={this.onSubmit}>
-              <textarea
-                className="details__form-text"
-                placeholder={`Ask about the ${flowerName}`}
-                value={this.state.newComment}
-                onChange={this.onChange}
-                rows="3"
-                // cols="34"
-              />
-              <div className="details__form-btn-wrapper">
-                <button className="details__form-btn">Send</button>
-              </div>
-            </form>
-          </div>
-
-          <div className="details__comments">
-            <div className="details__comments-label">Comments</div>
-            {comments.map(comment => {
-              return <div className="details__comments-item">{comment}</div>;
-            })}
-          </div>
+          <Comments
+            key={id}
+            flowerInfo={this.state.flowerData}
+            onSubmit={this.onSubmit}
+            onChange={this.onChange}
+            newComment={this.state.newComment}
+          />
         </div>
       </div>
     );

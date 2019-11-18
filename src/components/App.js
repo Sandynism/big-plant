@@ -11,7 +11,6 @@ class App extends React.Component {
     flowerData: data
   };
 
-  //function add comments
   addComment = (comment, id) => {
     const newFlowerData = [...this.state.flowerData];
     newFlowerData.forEach(data => {

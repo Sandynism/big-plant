@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Card = ({
   index,
-  flowerInfo: { id, url, flowerName, person, description }
+  flowerInfo: { id, url, flowerName, person, funFact }
 }) => {
   return (
     <div className={`card grid--${index}`}>
@@ -23,7 +23,7 @@ const Card = ({
             <span className="card__name--title">{flowerName}</span>
           </Link>
         </div>
-        <div className="card__description">{description}</div>
+        <div className="card__fact">{funFact}</div>
       </div>
     </div>
   );
