@@ -8,11 +8,7 @@ const Home = props => {
     });
   };
 
-  console.log(props);
-
-  return (
-      <div className="grid">{renderCards()}</div>
-  );
+  return <div className="grid">{renderCards()}</div>;
 };
 
 export default Home;
