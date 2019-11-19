@@ -1,6 +1,6 @@
 # Big Plant 
 
-This application is a directory of plants that Big Human employees like. 
+This application is a directory of plants that Big Human employees like built with Create React App and Sass.
 
 ## How to install
 
