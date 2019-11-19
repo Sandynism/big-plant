@@ -2,6 +2,9 @@
 
 This application is a directory of plants that Big Human employees like built with Create React App and Sass.
 
+## Access it here
+[Big Plant Website](https://clever-borg-7e1c33.netlify.com/)
+
 ## How to install
 
 __In GitBash or Terminal__
