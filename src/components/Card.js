@@ -1,10 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Card = ({
-  index,
-  flowerInfo: { id, url, flowerName, person, funFact }
-}) => {
+// flower cards for the big plant main page
+const Card = ({ index, flowerInfo: { id, url, flowerName, person, funFact } }) => {
   return (
     <div className={`card grid--${index}`}>
       <div className="card__image" key={id}>

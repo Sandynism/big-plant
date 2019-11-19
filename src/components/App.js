@@ -6,13 +6,14 @@ import Details from '../container/Details';
 import data from '../data/data.json';
 import '../sass/App.scss';
 
+
 class App extends React.Component {
   state = {
     flowerData: data,
     showMobileMenu: true,
   };
 
-
+  //function to display mobile nav menu
   toggleNav = e => {
     e.preventDefault();
     const toggle = document.querySelector('.navigation__dropdown-content--mobile');
@@ -30,6 +31,7 @@ class App extends React.Component {
     }
   };
 
+  //function to add new comments to the flower data object and update the state
   addComment = (comment, id) => {
     const newFlowerData = [...this.state.flowerData];
     newFlowerData.forEach(data => {
