@@ -1,0 +1,4 @@
+#redirects
+
+/details
+/details/:id
