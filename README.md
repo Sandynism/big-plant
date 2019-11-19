@@ -1,4 +1,4 @@
-##Big Plant 
+## Big Plant 
 
 This application is a directory of plants that Big Human employees like. 
 
