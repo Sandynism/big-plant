@@ -8,7 +8,26 @@ import '../sass/App.scss';
 
 class App extends React.Component {
   state = {
-    flowerData: data
+    flowerData: data,
+    showMobileMenu: true,
+  };
+
+
+  toggleNav = e => {
+    e.preventDefault();
+    const toggle = document.querySelector('.navigation__dropdown-content--mobile');
+
+    if (toggle.style.display === 'block') {
+      toggle.style.display = 'none';
+      this.setState(prevState => ({
+        showMobileMenu: !prevState.showMobileMenu
+      }));
+    } else {
+      toggle.style.display = 'block';
+      this.setState(prevState => ({
+        showMobileMenu: !prevState.showMobileMenu
+      }));
+    }
   };
 
   addComment = (comment, id) => {
@@ -22,18 +41,19 @@ class App extends React.Component {
   };
 
   render() {
+    const {showMobileMenu, flowerData} = this.state
     return (
       <div className="container">
         <Router>
-          <Navigation />
+          <Navigation showMobileMenu={showMobileMenu} toggleNav={this.toggleNav} />
           <Switch>
             <Route
               path="/details/:id"
               render={props => (
-                <Details data={this.state.flowerData} {...props} addComment={this.addComment} />
+                <Details data={flowerData} {...props} addComment={this.addComment} />
               )}
             />
-            <Route path="/" render={props => <Home data={this.state.flowerData} {...props} />} />
+            <Route path="/" render={props => <Home data={flowerData} {...props} />} />
           </Switch>
         </Router>
       </div>

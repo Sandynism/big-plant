@@ -31,9 +31,9 @@
   }
 
   &__back {
-    font-size: 3rem;
+    font-size: 5rem;
     position: absolute;
-    top: -70px;
+    top: -100px;
     left: 0;
 
     & a {
@@ -46,7 +46,7 @@
     }
 
     @include respond(tablet-p) {
-      font-size: 2.5rem;
+      font-size: 4rem;
     }
   }
 

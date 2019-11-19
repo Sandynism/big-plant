@@ -42,7 +42,8 @@ class Details extends React.Component {
       <div className="details">
         <div className="details__back">
           <Link to="/">
-            <i className="fa fa-chevron-left"></i>
+            {/* <i className="fa fa-chevron-left"></i> */}
+            &lsaquo;
           </Link>
         </div>
         <div className="details__col-1">

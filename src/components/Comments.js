@@ -12,7 +12,6 @@ const Comments = ({ onSubmit, onChange, newComment, flowerInfo: { flowerName, co
             value={newComment}
             onChange={onChange}
             rows="3"
-            // cols="34"
           />
           <div className="comments__form-btn-wrapper">
             <button className="comments__form-btn">Send</button>
@@ -20,16 +19,18 @@ const Comments = ({ onSubmit, onChange, newComment, flowerInfo: { flowerName, co
         </form>
       </div>
 
-      <div className="comments__comments">
-        <div className="comments__comments-label">Comments</div>
-        {comments.map((comment, index) => {
-          return (
-            <div key={index} className="comments__comments-item">
-              {comment}
-            </div>
-          );
-        })}
-      </div>
+      {comments.length > 0 ? (
+        <div className="comments__comments">
+          <div className="comments__comments-label">Comments</div>
+          {comments.map((comment, index) => {
+            return (
+              <div key={index} className="comments__comments-item">
+                {comment}
+              </div>
+            );
+          })}
+        </div>
+      ) : null}
     </div>
   );
 };
